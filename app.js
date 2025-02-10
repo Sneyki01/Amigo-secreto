@@ -13,11 +13,9 @@
 
 function mostrarContenido () {
     let instrucciones = document.getElementById('Instrucciones');
-    if (instrucciones) { 
         instrucciones.style.display='none';
-    } else {
-        console.error('Elemento Instrucciones no encontrado. ');
-    }
+    let contenido = document.getElementById('Seccion_Oculta');
+        contenido.classList.add('visible');
 }
 
 
