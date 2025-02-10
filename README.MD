@@ -1,3 +1,4 @@
 <h1> El amigo secreto </h1>
 
-He creado esta branch para hacer la modificacion del juego Amigo secreto, voy a empezar cambiando el diseño web.
+Se finaliza con secciones del elemento HTML, empieza a generarse la logica de botones
+actualmente hay un problema con el boton "Entendido?" con la funcion onclick.

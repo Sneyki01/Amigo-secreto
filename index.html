@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -12,16 +12,33 @@
 
 <body>
    <main>
-    <header>
+    <header class="Titutlo">
         <h1>El juego del amigo secreto</h1>
         <p>Bienvnido al juego del amigo secreto</p>
     </header>
-    <h2>Instrucciones</h2>
-    <p>Ingresa varios nombres, estos seran guardados y al hacer click en "Sortear amigo" se seleccionara
-        uno al azar para determinar quien es El amigo secreto!</p>
-    <input>
-    <button>Sortear amigo</button>
-    
+    <section id="Instrucciones" class="Seccion__Instrucciones">
+        <h2>Instrucciones</h2>
+        <p>Ingresa varios nombres usando el boton <span>Agregar Amigo</span>, estos
+         seran guardados.</p>
+        <p>Al hacer click en "Sortear amigo" se seleccionara
+            uno al azar para determinar quien es <span class="Resaltado__Amigo__Secreto">
+                El amigo secreto!</span></p>
+        <button onclick= mostrarContenido(); class="Boton__Entendido"
+         id="Boton__Entendido">Entendido?</button>
+    </section>
+     <section class="Seccion_Oculta">
+        <section class="Seccion__Boton__Agregar">
+            <p class="Parrafo__Nombres">Empecemos por agregar los nombres aqui</p>
+            <input class="Input__Nombres">
+            <button class="Sortear">Agregar amigo</button>
+        </section>
+        <section class="Seccion__Sortear__amigo">
+            <p>Los amigos agregados son:</p>
+            <ul class="Lista__amigos" id="listDeAmigos">ejemplo de lista</ul>
+            <button>Sortear amigos</button>
+        </section>
+    </section>
    </main>
+   <script src="app.js"></script>
 </body>
 </html>

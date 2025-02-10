@@ -11,6 +11,16 @@
 //implementar una funcion para agregar amigos
 //implementar una funcion para actualizar la lista de amigos
 
+function mostrarContenido () {
+    let instrucciones = document.getElementById('Instrucciones');
+    if (instrucciones) { 
+        instrucciones.style.display='none';
+    } else {
+        console.error('Elemento Instrucciones no encontrado. ');
+    }
+}
+
+
 function agregarAmigo() {
     nombres = document.getElementById('amigo').value;
     if (nombres === ''){
