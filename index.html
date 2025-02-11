@@ -11,34 +11,38 @@
 </head>
 
 <body>
-   <main>
+    <main>
     <header class="Titutlo">
-        <h1>El juego del amigo secreto</h1>
-        <p>Bienvnido al juego del amigo secreto</p>
+        <h1 class="titulo__H1">El juego del amigo secreto</h1>
+        <p class="titutlo__p">Bienvenido al juego del amigo secreto</p>
     </header>
     <section id="Instrucciones" class="Seccion__Instrucciones">
-        <h2>Instrucciones</h2>
-        <p>Ingresa varios nombres usando el boton <span>Agregar Amigo</span>, estos
-         seran guardados.</p>
-        <p>Al hacer click en "Sortear amigo" se seleccionara
+        <h2 class="Instrucciones__H2">Instrucciones</h2>
+        <p class="Instrucciones__p1">Ingresa varios nombres usando el boton <span>Agregar Amigo</span>, estos
+            seran guardados.</p>
+        <p class="instrucciones__p2">Al hacer click en "Sortear amigo" se seleccionara
             uno al azar para determinar quien es <span class="Resaltado__Amigo__Secreto">
                 El amigo secreto!</span></p>
         <button onclick= mostrarContenido(); class="Boton__Entendido"
-         id="Boton__Entendido">Entendido?</button>
+        id="Boton__Entendido">Entendido</button>
     </section>
-     <section id="Seccion_Oculta" class="Seccion_Oculta">
+    <section id="Seccion_Oculta" class="Seccion_Oculta">
         <section class="Seccion__Boton__Agregar">
             <p class="Parrafo__Nombres">Empecemos por agregar los nombres aqui</p>
-            <input class="Input__Nombres">
-            <button class="Sortear">Agregar amigo</button>
+            <input class="Input__Nombres" id="amigo">
+            <button onclick= agregarAmigo(); class="button__agregar">Agregar amigo</button>
         </section>
         <section class="Seccion__Sortear__amigo">
-            <p>Los amigos agregados son:</p>
-            <ul class="Lista__amigos" id="listDeAmigos">ejemplo de lista</ul>
-            <button>Sortear amigos</button>
+            <p class="sortear__amigo__p" id="amigosAgregadosTexto">Los amigos agregados son:</p>
+            <ul class="Lista__amigos" id="listDeAmigos"></ul>
+            <div>
+                <button onclick=sortearAmigo(); class="button__sortear" id="buttonSortear" disabled>Sortear amigos</button>
+                <button onclick=valorPredeterminado(); class="button__iniciar__nuevo" id="buttonIniciarNuevo" 
+                disabled>Iniciar de nuevo</button>
+            </div>
         </section>
     </section>
-   </main>
-   <script src="app.js" defer></script>
+    </main>
+<script src="app.js" defer></script>
 </body>
 </html>

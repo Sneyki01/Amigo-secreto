@@ -1,13 +1,19 @@
- //variables
- let nombres;
- //Crear un array para almacenar nombres
- let listaDeNombres = [];
+//variables
+let nombres;
+//Crear un array para almacenar nombres
+let listaDeNombres = [];
 
- function asignarTextoElemento (elemento, texto) {
+function asignarTextoElemento (elemento, texto) {
     let elementoHTML = document.querySelector(elemento);
     elementoHTML.innerHTML = texto;
     return;
- }
+}
+
+function actualizarBotonSortear() {
+    let botonSortear = document.getElementById('buttonSortear');
+    botonSortear.disabled = listaDeNombres.length === 0;
+    
+}
 //implementar una funcion para agregar amigos
 //implementar una funcion para actualizar la lista de amigos
 
@@ -26,25 +32,31 @@ function agregarAmigo() {
     } else {
         if (listaDeNombres.includes(nombres)) {
             alert('El nombre ya ha sido agregado anteriormente');
-           }
-           else {
+        } else {
         listaDeNombres.push(nombres);
         document.getElementById('amigo').value = '';
-        asignarTextoElemento('ul',`${listaDeNombres}`);
+        let ul = document.getElementById('listDeAmigos');
+        let li = document.createElement('li');
+        li.textContent = nombres;
+        ul.appendChild(li);
+        actualizarBotonSortear();
     }
         //console.log(nombres);
     //console.log(`los nombres registrados son: ${listaDeNombres}`);
 }
 }
- //implementar una funcion para sortear amigos
-
+//implementar una funcion para sortear amigos
 function sortearAmigo() {
     let amigoSorteado = listaDeNombres[Math.floor(Math.random()*listaDeNombres.length)];
-
-    //console.log(`El amigo ganador es ${amigoSorteado}`);
     asignarTextoElemento('ul', `El amigo secreto es ${amigoSorteado}`);
+    document.getElementById('amigosAgregadosTexto').textContent = 'Felicidades!';
+    listaDeNombres = [];
+    actualizarBotonSortear();
+    document.getElementById('buttonIniciarNuevo').disabled = false; 
 }
- /* Falta crear funcion para que no se repita el mismo nombre. 
-    Ver si se puede mejorar el diseño de la lista de amigos
-    Generar diseño para alertas
-*/
+
+function valorPredeterminado(){
+    asignarTextoElemento('ul', '');
+    document.getElementById('buttonIniciarNuevo').disabled = true;
+    document.getElementById('amigosAgregadosTexto').textContent = 'Los amigos agregados son:';
+}

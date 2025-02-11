@@ -15,11 +15,34 @@
     box-sizing: border-box;
 }
 
-.Titutlo{
-    padding: 1% 0% 0% 40%;
+.titulo__H1{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
 }
 
+.titutlo__p {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 30px;
+}
 
+.Seccion__Instrucciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    gap: 20px;
+    font-size: 30px;
+}
+
+.Boton__Entendido{
+    padding: 1% 2% 1% 2%;
+    font-size: 25px;
+    
+}
 
 .Seccion_Oculta{
     opacity: 0;
@@ -30,4 +53,57 @@
 .visible{
     opacity: 1;
     visibility: visible;
+}
+
+.Seccion__Boton__Agregar{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.Parrafo__Nombres{
+    font-size: 20px;
+}
+
+.Input__Nombres{
+    box-sizing: border-box;
+    padding: 5px 20px;
+    font-size: 23px;
+    text-align: center;
+}
+
+.button__agregar{
+    padding: 5px;
+    font-size: 20px;
+}
+
+.Seccion__Sortear__amigo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    gap: 10px;
+}
+
+.sortear__amigo__p{
+    font-size: 25px;
+}
+
+.Lista__amigos{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.button__sortear{
+    padding: 5px;
+    font-size: 20px;
+}
+
+.button__iniciar__nuevo{
+    padding: 5px;
+    font-size: 20px;
 }
