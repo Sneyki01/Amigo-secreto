@@ -22,7 +22,8 @@ function mostrarContenido () {
         instrucciones.style.display='none';
     let contenido = document.getElementById('Seccion_Oculta');
         contenido.classList.add('visible');
-}
+        document.getElementById('bienvenidoAlJuego').textContent = ''
+    }
 
 
 function agregarAmigo() {

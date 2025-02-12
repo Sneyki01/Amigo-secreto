@@ -8,6 +8,33 @@
     --color-white: #FFFAFB;
 }
 
+.delicious-handrawn-regular {
+    font-family: "Delicious Handrawn", serif;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+.indie-flower-regular {
+    font-family: "Indie Flower", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.permanent-marker-regular {
+    font-family: "Permanent Marker", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.oswald-uniquifier {
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+
 /* Estilos generales */
 * {
     margin: 0;
@@ -15,17 +42,35 @@
     box-sizing: border-box;
 }
 
+body {
+    position: relative;
+    background: url(assets/ilustracion-abstracta-formas-contemporaneas_291162-700.png) no-repeat center center;
+    background-size: cover;
+    height: 100%;
+}
+
 .titulo__H1{
     display: flex;
     justify-content: center;
-    font-size: 50px;
+    font-size: 100px;
+    font-family: "Delicious Handrawn", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .titutlo__p {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-    font-size: 30px;
+    margin-top: 60px;
+    font-size: 40px;
+    font-family: "Indie Flower", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.imagen__personas{
+    display: flex;
+    justify-content: center;
 }
 
 .Seccion__Instrucciones{
@@ -33,15 +78,44 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 50px;
     gap: 20px;
     font-size: 30px;
+    
+}
+
+.Instrucciones__H2 {
+    font-family: "Delicious Handrawn", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.Instrucciones__p1 {
+    font-family: "Indie Flower", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.span__agregar__amigo{
+    font-weight: 800;
+}
+
+.Resaltado__Amigo__Secreto{
+    font-weight: 900;
+}
+
+.instrucciones__p2 {
+    font-family: "Indie Flower", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .Boton__Entendido{
     padding: 1% 2% 1% 2%;
     font-size: 25px;
-    
+    font-family: "Permanent Marker", serif;
+    font-weight: 400;
+    font-style: normal;   
 }
 
 .Seccion_Oculta{
@@ -56,7 +130,7 @@
 }
 
 .Seccion__Boton__Agregar{
-    margin-top: 200px;
+    margin-top: px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,7 +139,11 @@
 }
 
 .Parrafo__Nombres{
-    font-size: 20px;
+    font-size: 40px;
+    font-family: "Indie Flower", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 50px;
 }
 
 .Input__Nombres{
@@ -73,11 +151,19 @@
     padding: 5px 20px;
     font-size: 23px;
     text-align: center;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    color: #df4535;
 }
 
 .button__agregar{
     padding: 5px;
     font-size: 20px;
+    font-family: "Permanent Marker", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .Seccion__Sortear__amigo{
@@ -85,25 +171,49 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 120px;
+    margin-top: 10px;
     gap: 10px;
 }
 
 .sortear__amigo__p{
-    font-size: 25px;
+    font-size: 40px;
+    font-family: "Indie Flower", serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
+
 .Lista__amigos{
-    font-size: 20px;
-    font-weight: 800;
+    font-size: 30px;
+    font-weight: 400;
 }
 
 .button__sortear{
     padding: 5px;
     font-size: 20px;
+    font-family: "Permanent Marker", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .button__iniciar__nuevo{
     padding: 5px;
     font-size: 20px;
+    font-family: "Permanent Marker", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.footer{
+    width: auto;
+    background-color: black;
+    padding: 23px;
+    color: green;
+    text-align: center;
+    font-size: 24px;
+    font-family: "Permanent Marker", serif;
+    font-weight: 400;
+    font-style: normal;
+
+margin-top: 50px;
 }

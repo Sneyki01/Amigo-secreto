@@ -6,19 +6,22 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Indie+Flower&family=Oswald:wght@200..700&family=Permanent+Marker&display=swap" rel="stylesheet">
     <title>El Amigo Secreto</title>
 </head>
 
 <body>
-    <main>
+    <main class="Main">
     <header class="Titutlo">
         <h1 class="titulo__H1">El juego del amigo secreto</h1>
-        <p class="titutlo__p">Bienvenido al juego del amigo secreto</p>
+        <p class="titutlo__p" id="bienvenidoAlJuego">Bienvenido al juego del amigo secreto</p>
     </header>
-    <section id="Instrucciones" class="Seccion__Instrucciones">
+    <div class="imagen__personas">
+        <img src="assets/klipartz.com.png" alt="Imagen de dos personas con un signo de interrogacion">
+    </div>
+        <section id="Instrucciones" class="Seccion__Instrucciones">
         <h2 class="Instrucciones__H2">Instrucciones</h2>
-        <p class="Instrucciones__p1">Ingresa varios nombres usando el boton <span>Agregar Amigo</span>, estos
+        <p class="Instrucciones__p1">Ingresa varios nombres usando el boton <span class="span__agregar__amigo">Agregar Amigo</span>, estos
             seran guardados.</p>
         <p class="instrucciones__p2">Al hacer click en "Sortear amigo" se seleccionara
             uno al azar para determinar quien es <span class="Resaltado__Amigo__Secreto">
@@ -45,4 +48,7 @@
     </main>
 <script src="app.js" defer></script>
 </body>
+<footer class="footer">
+    <p>Desarrollado por Sneyki</p>
+</footer>
 </html>
