@@ -1,2 +1,1 @@
-<h1> El juego del amigo secreto </h1>
-
+! [Titulo de amigo secreto](https://pasteboard.co/KlCJrAfkL31V.png)
