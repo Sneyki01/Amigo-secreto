@@ -63,3 +63,62 @@ Cuando haya hecho click en el boton **Sortear amigos**, el texto de arriba cambi
 Al realizar el sorteo, se activara el boton **Iniciar de nuevo** el cual nos permitira borrar la lista con los nombres ingresados previamente y crear una nueva.
 
 ![Imagen boton iniciar de nuevo](https://gcdnb.pbrd.co/images/6FJGXOijsCkr.png?o=1)
+
+## English
+
+<h3>Welcome to the Secret friend game</h3>
+
+A small project that I developed using the courses in **ALURALATAM** where we will play a mini-game providing some names to the system, after that, the system will choose 1 randomly to determinate who's the Secret friend!
+
+A mini-game that can be used for different purposes:
+- Select a friend randomly
+- Choose a person to assign a task
+- Not only names, you can add a To Do list and select one randomly if you can't decide for which one start. 
+
+Limit is in your mind.
+
+Now, I'll bring you with some ScreenShots about how to use the page. 
+
+### interaface
+At the beginning we will find the main page with the instructions of how to use the website. 
+
+![Imagen pagina principal](https://gcdnb.pbrd.co/images/OwbTsElrYsxP.png?o=1)
+
+we need to click in the button **Entendido**
+
+once clicked, the page will show a text-box and 3 new buttons
+![Imagen juego amigo secreto](https://gcdnb.pbrd.co/images/uE4wJQJriNvu.png?o=1)
+
+### Text-Box
+
+We will use the text-box to add the names. 
+
+⚠️**Attention**⚠️
+- system will no accept the same name twice.
+- Is necessary to type a name, if the text-box is leaved in blank the system will no accept the value.
+
+once added the names we will click in the **Agregar Amigo** button so we going to save it into the system.
+
+![imagen caja de texto](https://gcdnb.pbrd.co/images/SDvN8wjhY0x2.png?o=1)
+
+### Names added
+
+Once we add the first name, the **sortear amigo** button going to be activated, whilwe are adding names, these will be shown below of the **Los amigos agregados son:** text.
+
+![imagen nombres agregados](https://gcdnb.pbrd.co/images/8dltw4LQCx3H.png?o=1)
+
+### Sortear amigos Button
+
+once all the names that we will include are added, we will click into the **Sortear amigos** button
+
+![Imagen boton sortear amigos](https://gcdnb.pbrd.co/images/ph2trsToli8s.png?o=1)
+
+when you click in the **Sortear amigos** button, the upside text will change showing the secret friend and the **Inicier de nuevo** button will be active.
+
+![Imagen amigo sorteado](https://gcdnb.pbrd.co/images/LNEQtR4yF39m.png?o=1)
+
+### Iniciar de nuevo Button
+
+If the secret friend has been selected, the **Iniciar de nuevo** button will be active, This button will erase the information provided previously and create a new list.
+
+![Imagen boton iniciar de nuevo](https://gcdnb.pbrd.co/images/6FJGXOijsCkr.png?o=1)
